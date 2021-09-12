@@ -9,10 +9,22 @@ html {
     font-size: 16px;
     scroll-behavior: smooth;
 }
+::-webkit-scrollbar {
+    background-color: transparent;
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #0A0808;
+    border-radius: 10px;
+}
+::selection {
+    background: gray;
+}
 body {
     background-color: #C6C0BA;
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
+    font-size: 1.5rem;
 }
 header {
     top:0;
@@ -31,12 +43,21 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
-#logo {
+.button {
     font-family: 'Lobster', cursive;
     border: 3px solid #0A0808;
-    box-shadow: -2px 2px;
+    box-shadow: black -2px 2px;
+    padding: 5px 10px;
+    color: #0A0808;
+    border-radius: 5px;
+    transition: background-color 500ms ease-out;
 }
-#logo:hover {
+.button:hover {
+    box-shadow: black -2px 2px;
+    background-color: #0A0808;
+    color: #C6C0BA;
+}
+.button:active {
     position: relative;
     top: 2px;
     right: 2px;
@@ -65,6 +86,9 @@ a {
     align-items: center;
     justify-content: center;
 }
+#landing a {
+    color: #0A0808;
+}
 #landing-content {
     max-height: 600px;
     display: flex;
@@ -72,16 +96,24 @@ a {
     align-content: center;
     justify-content: center;
     margin-top: -100px;
-    border: 3px solid #0A0808;
+    border: 5px solid #0A0808;
     border-radius: 20px;
     padding: 20px 0;
     filter: grayscale(100%);
-    box-shadow: -8px 8px;
-    transition: filter 500ms ease-out;
-    font-size: 1.5rem;
+    box-shadow: black -8px 8px;
+    transition: background-color 500ms ease-out,
+                filter 500ms ease-out;
 }
 #landing-content:hover {
     filter: grayscale(0%);
+    background-color: #0A0808;
+    color: #C6C0BA;
+}
+#landing-content:active {
+    box-shadow: none;
+    position: relative;
+    top: 8px;
+    right: 8px;
 }
 #my-name {
     width: 100%;
@@ -99,22 +131,65 @@ a {
     margin: 0 auto;
 }
 #profile-image {
-    max-width: 400px;
+    max-width: auto;
     max-height: 400px;
     position: relative;
     top: -30px;
 }
 #about, #contact {
-    background-color: #0A0808 ;
+    background-image: linear-gradient(to right, #616060, #0A0808);
     color: #C6C0BA;
+    border-radius: 70px;
+    /* position: fixed; */
 }
-#about div {
+#about-content {
+    position: relative;
+    top: -80px;
+    left: -100px;
     text-align: start;
     width: 400px;
+    margin: 0 auto;
 }
-#about ul {
-    padding: 15px;
+#about-content ul {
+    padding-left: 15px;
+    list-style-type: circle;
+}
+#about-image {
+    position: relative;
+    top: -130px;
+    max-height: auto;
+    max-width: 600px;
+    border-radius: 10%;
+    border: 6px solid ;
+    transition: all 500ms ease-out;
+}
+#about-image:hover {
+    transform: scale(1.1)
+}
+.projects {
+    max-width: 600px;
+    margin: 0px auto;
+}
+.projects h3 {
+    transition: all 500ms ease-out;
+}
+.projects h3:hover {
+    cursor: pointer;
+    transform: translateX(10px);
+}
+.projects img {
+    max-width: 100%;
+    max-height: auto;
+}
+#project-1, #project-2, #project-3 {
+    display: none;
 }
 #contact a {
     color: #C6C0BA;
+    padding: 0 20px;
+    font-size: 2rem;
+    transition: all 500ms ease-out;
+}
+#contact a:hover {
+    font-size: 1.5rem;
 }
