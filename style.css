@@ -1,0 +1,120 @@
+/* Reset styles */
+html, body, ul, h1 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #C6C0BA;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+header {
+    top:0;
+    position: sticky;
+    background-color: transparent;
+    z-index: 1;
+    box-shadow: 0 0 7px ;
+    backdrop-filter: blur(10px);
+}
+nav,#landing , #about, #project-section, #contact, footer {
+    padding: 20px;
+}
+nav {
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo {
+    font-family: 'Lobster', cursive;
+    border: 3px solid #0A0808;
+    box-shadow: -2px 2px;
+}
+#logo:hover {
+    position: relative;
+    top: 2px;
+    right: 2px;
+    box-shadow: none;
+}
+nav a {
+    color: #0A0808;
+    font-weight: 600;
+    transition: background-color 500ms ease-out;
+    padding: 10px;
+    border-radius: 3px;
+}
+nav a:hover {
+    background-color: #0A0808;
+    color: #C6C0BA;
+}
+a {
+    text-decoration: none;
+}
+#navigation li{
+    display: inline-block;
+}
+#landing {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#landing-content {
+    max-height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin-top: -100px;
+    border: 3px solid #0A0808;
+    border-radius: 20px;
+    padding: 20px 0;
+    filter: grayscale(100%);
+    box-shadow: -8px 8px;
+    transition: filter 500ms ease-out;
+    font-size: 1.5rem;
+}
+#landing-content:hover {
+    filter: grayscale(0%);
+}
+#my-name {
+    width: 100%;
+    height: 100%;
+    font-family: 'Lobster', cursive;
+}
+#my-name h1 {
+    font-size: 5rem;
+}
+#image-portrait {
+    max-height: 300px;
+    max-width: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+#profile-image {
+    max-width: 400px;
+    max-height: 400px;
+    position: relative;
+    top: -30px;
+}
+#about, #contact {
+    background-color: #0A0808 ;
+    color: #C6C0BA;
+}
+#about div {
+    text-align: start;
+    width: 400px;
+}
+#about ul {
+    padding: 15px;
+}
+#contact a {
+    color: #C6C0BA;
+}

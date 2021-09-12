@@ -5,81 +5,90 @@
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Abidan Martinez</title>
+     <link rel="stylesheet" href="style.css">
+     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Ubuntu&display=swap" rel="stylesheet">
  </head>
  <body>
-     <header>
+     <header id="home">
          <nav>
-             <ul>
-                 <li><a href="#home">logo or initial</a></li>
+             <a id="logo" href="#landing">AM</a>
+             <ul id="navigation">
                  <li><a href="#about">About</a></li>
-                 <li><a href="#projects">Projects</a></li>
+                 <li><a href="#project-section">Projects</a></li>
                  <li><a href="#contact">Contact</a></li>
-                 <li><a href="/Resume.pdf" target="_blank">Resume</a></li>
              </ul>
+             <a href="/Resume.pdf" target="_blank">Resume</a>
          </nav>
      </header>
-     <main id="home">
-         <div id="my-name">
-            <h1>Abidan Martinez</h1>
-            <img src="" alt="">
-         </div>
-         <div id="my-image"></div>
+     <main>
+         <section id="landing">
+             <div id="landing-content">
+                <p>hello, my name is</p>
+                <div id="my-name">
+                    <h1>Abidan Martinez</h1>
+                    <div id="image-portrait">
+                        <img id="profile-image" src="profile-image.jpg" alt="an image of Abidan Martinez">
+                    </div>
+                    <h2>Web Developer</h2>
+                 </div>
+             </div>
+         </section>
          <section id="about">
              <h2>About Me</h2>
-             <p>I'm a Fresno Pacific University graduate and aspiring Frontend Web Developer. 
-                I enjoy building projects on the web and gaining more knowledge while honing my skills. 
-                Currently, I work side jobs while building project sites for friends and family.
-                <br>
-                My interest in Web Development started during my time in college after taking a few computer courses.
-                Ever since then, I've done more research about the field and pursued my Bachelors degree in Computer Information Systems.
-            </p>
-            <p>A list of technologies I've had some experience working with include:</p>
-            <ul>
-                <li>C++</li>
-                <li>Javascript</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Markdown</li>
-                <li>Python</li>
-                <li>Django</li>
-            </ul>
+             <div>
+                <p>I'm a Fresno Pacific University graduate and aspiring Frontend Web Developer. 
+                    I enjoy building projects on the web and gaining more knowledge while honing my skills. 
+                    Currently, I work side jobs while building project sites for friends and family.
+                    <br><br>
+                    My interest in Web Development started during my time in college after taking a few computer courses.
+                    Ever since then, I've done more research about the field and pursued my Bachelors degree in Computer Information Systems.
+                    <br><br>
+                    A list of technologies I've had some experience working with include:</p>
+                <ul>
+                    <li>C++</li>
+                    <li>Javascript</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Bootstrap</li>
+                    <li>Markdown</li>
+                    <li>Python</li>
+                    <li>Django</li>
+                </ul>
+             </div>
          </section>
-         <hr>
-         <section id="projects">
+         <section id="project-section">
              <h2>Projects</h2>
              <p>Here's some of the projects I've worked on:</p>
-             <div id="project-1">
+             <div class="projects">
                 <h3>Project 1</h3>
-                <figure>
+                <figure id="project-1">
                     <img src="" alt="">
                     <figcaption>This project's technologies consist of ...</figcaption>
                 </figure>
              </div>
-             <div id="project-2">
+             <div class="projects">
                 <h3>Project 2</h3>
-                <figure>
+                <figure id="project-2">
                     <img src="" alt="">
                     <figcaption>This project's technologies consist of ...</figcaption>
                 </figure>
             </div>
-            <div id="project-3">
+            <div class="projects">
                 <h3>Project 3</h3>
-                <figure>
+                <figure id="project-3">
                     <img src="" alt="">
                     <figcaption>This project's technologies consist of ...</figcaption>
                 </figure>
             </div>
          </section>
-         <hr>
          <section id="contact">
              <h2>Contact Me</h2>
              <p>email: <a href="mailto:abidanmtz@gmail.com" target="_blank">abidanmtz@gmail.com</a></p>
              <p>github: <a href="https://github.com/abidanm1000" target="_blank">@abidanm1000</a></p>
          </section>
      </main>
-     <hr>
      <footer>
-         <p>Designed and built by Abidan Martinez</p>
+         <p>Made with <3 by Abidan Martinez</p>
      </footer>
  </body>
  </html>
