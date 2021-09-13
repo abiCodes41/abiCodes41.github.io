@@ -162,6 +162,27 @@ a {
     padding-left: 15px;
     list-style-type: circle;
 }
+@keyframes bounce {
+    0% {
+        transform: scale(0.1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+#image-text {
+    font-family: 'Lobster', cursive;
+    font-size: 4rem;
+    position: absolute;
+    right: 41%;
+    top: 98%;
+    z-index: 1;
+    animation: bounce 1.5s ease-out;
+    display: none;
+}
 #about-image {
     position: relative;
     top: -130px;
@@ -170,6 +191,7 @@ a {
     border-radius: 10%;
     border: 6px solid ;
     transition: all 500ms ease-out;
+    cursor: pointer;
 }
 #about-image:hover {
     transform: scale(1.1)

@@ -2,6 +2,7 @@
 let projectOne = document.getElementById('red-bull');
 let projectTwo = document.getElementById('web-dev');
 let projectThree = document.getElementById('savory-sandwiches');
+let aboutImage = document.getElementById('about-image');
 
 // event handler function
 const displayProject = (e) => {
@@ -33,3 +34,7 @@ const displayProject = (e) => {
 projectOne.addEventListener('click', displayProject)
 projectTwo.addEventListener('click', displayProject)
 projectThree.addEventListener('click', displayProject)
+
+aboutImage.onclick = function() {
+    aboutImage.nextElementSibling.style.display = 'block';
+}
