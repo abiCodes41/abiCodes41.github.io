@@ -45,6 +45,10 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
+hr {
+    background-color: black;
+    height: 5px;
+}
 
 /* button and transition styles */
 .button {
@@ -184,9 +188,11 @@ a {
 .projects img {
     max-width: 100%;
     max-height: auto;
+    border: grey solid 15px;
 }
 #project-1, #project-2, #project-3 {
     display: none;
+    opacity: 0;
 }
 #contact a {
     color: #C6C0BA;
