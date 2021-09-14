@@ -8,6 +8,7 @@
      <link rel="stylesheet" href="style.css">
      <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Ubuntu&display=swap" rel="stylesheet">
      <link rel="icon" type="image/png" sizes="32x32" href="images/logo2.jpg">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <script src="main.js" defer></script>
      <script src="https://kit.fontawesome.com/b0b3c598f2.js" crossorigin="anonymous" async></script>
  </head>
@@ -22,6 +23,20 @@
              </ul>
              <a href="/Resume.pdf" target="_blank">Resume</a>
          </nav>
+         <div class="topnav">
+            <a href="#" class="active" id="hamburger-logo">A</a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+              <a href="#about">About</a>
+              <a href="#project-section">Projects</a>
+              <a href="#contact">Contact</a>
+              <a href="/Resume.pdf" target="_blank">Resume</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
      </header>
      <main>
          <section id="landing">

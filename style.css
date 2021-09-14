@@ -36,7 +36,7 @@ header {
     box-shadow: 0 0 7px ;
     backdrop-filter: blur(10px);
 }
-nav,#landing , #about, #project-section, #contact, footer {
+nav, #landing , #about, #contact, footer {
     padding: 20px;
 }
 nav {
@@ -88,6 +88,7 @@ a {
 #navigation li{
     display: inline-block;
 }
+
 #landing {
     min-height: 100vh;
     display: flex;
@@ -98,7 +99,6 @@ a {
     color: #0A0808;
 }
 #landing-content {
-    max-height: 600px;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -148,12 +148,10 @@ a {
     background-image: linear-gradient(to right, #616060, #0A0808);
     color: #C6C0BA;
     border-radius: 70px;
-    /* position: fixed; */
 }
 #about-content {
     position: relative;
-    top: -80px;
-    left: -100px;
+    top: -40px;
     text-align: start;
     width: 400px;
     margin: 0 auto;
@@ -174,20 +172,19 @@ a {
     }
 }
 #image-text {
+    /* color: blue; */
     font-family: 'Lobster', cursive;
     font-size: 4rem;
-    position: absolute;
-    right: 41%;
-    top: 98%;
-    z-index: 1;
+    position: relative;
+    top: -400px;
     animation: bounce 1.5s ease-out;
     display: none;
+    margin: 0;
 }
 #about-image {
     position: relative;
-    top: -130px;
-    max-height: auto;
-    max-width: 600px;
+    top: -80px;
+    width: 500px;
     border-radius: 10%;
     border: 6px solid ;
     transition: all 500ms ease-out;
@@ -208,13 +205,12 @@ a {
     transform: translateX(10px);
 }
 .projects img {
-    max-width: 100%;
-    max-height: auto;
-    border: grey solid 15px;
+    width: 100%;
 }
 #project-1, #project-2, #project-3 {
     display: none;
     opacity: 0;
+    margin: 0;
 }
 #contact a {
     color: #C6C0BA;
@@ -236,3 +232,147 @@ footer i {
 }
 
  /* Responsive Media Queries */
+ @media only screen and (min-width: 480px){
+    .topnav {
+        display: none;
+    }
+ }
+ @media only screen and (min-width: 1200px) and (max-width: 1600px) {
+    html {
+        font-size: 0.8rem;
+    }
+    #image-portrait {
+        max-height: 120px;
+        max-width: 120px;
+    }
+    #profile-image {
+        max-height: 200px;
+        left: -15px;
+        top: -40px;
+    }
+    #about-image {
+        max-width: 30%;
+        top: -80px;
+    }
+    #image-text {
+        top: -300px;
+    }
+    .projects img {
+        max-width: 60%;
+    }
+  
+ }
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+    #image-text {
+        top: -380px;
+    }
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
+    html {
+        font-size: 0.7rem;
+    }
+    .topnav {
+        display: none;
+    }
+    #image-portrait {
+        max-height: 120px;
+        max-width: 120px;
+    }
+    #profile-image {
+        max-height: 200px;
+        left: -15px;
+        top: -40px;
+    }
+    #about-image {
+        max-width: 30%;
+        top: -80px;
+    }
+    #image-text {
+        top: -250px;
+    }
+    .projects img {
+        max-width: 60%;
+    } 
+    
+}
+
+@media only screen and (min-width: 270px) and (max-width: 480px) {
+    html {
+        font-size: 0.6rem;
+    }
+    nav {
+        display: none;
+    }
+    #image-portrait {
+        max-height: 170px;
+        max-width: 170px;
+    }
+    #profile-image {
+        max-height: 300px;
+        left: -30px;
+        top: -60px;
+    }
+    #about-content {
+        max-width: 100%;
+    }
+    #image-text {
+        top: -250px;
+    } 
+    #about-image {
+        max-width: 100%;
+        top: -100px;
+    }
+    .projects {
+        width: 100%;
+    }
+    .projects img {
+        max-width: 100%;
+    }
+}
+
+/* hamburger menu */
+.topnav {
+    overflow: hidden;
+    background-color: #c6c0baa1;
+    position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    text-align: start;
+    color: #0A0808;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: #C6C0BA;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #0A0808;
+    color: #C6C0BA;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: #C6C0BA;
+    color: #0A0808;
+  }
