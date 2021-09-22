@@ -29,8 +29,8 @@ body {
     font-size: 1.5rem;
 }
 header {
-    top:0;
     position: sticky;
+    top: 0;
     background-color: transparent;
     z-index: 1;
     box-shadow: 0 0 7px ;
@@ -140,9 +140,8 @@ a {
 }
 #profile-image {
     max-width: auto;
-    max-height: 400px;
+    max-height: 300px;
     position: relative;
-    top: -30px;
 }
 #about, #contact {
     background-image: linear-gradient(to right, #616060, #0A0808);
@@ -246,9 +245,7 @@ footer i {
         max-width: 120px;
     }
     #profile-image {
-        max-height: 200px;
-        left: -15px;
-        top: -40px;
+        max-height: 130px;
     }
     #about-image {
         max-width: 30%;
@@ -283,9 +280,7 @@ footer i {
         max-width: 120px;
     }
     #profile-image {
-        max-height: 200px;
-        left: -15px;
-        top: -40px;
+        max-height: 130px;
     }
     #about-image {
         max-width: 30%;
@@ -312,9 +307,7 @@ footer i {
         max-width: 170px;
     }
     #profile-image {
-        max-height: 300px;
-        left: -30px;
-        top: -60px;
+        max-height: 180px;
     }
     #about-content {
         max-width: 100%;
